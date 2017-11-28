@@ -1,0 +1,90 @@
+{
+  "globalIntervalDay": 1,
+  "filterUrlSuffix": "css|js|gif|bmp|jpeg|tiff|psd|png|svg|pcx|wmf|emf|lic|tga|rle|doc|jpg",
+  "filterUserAgent": "",
+  "scoreStoragePath": "/user/vendorjzsj/data/dpiMarketing/output/score",
+  "rangeDay": 30,
+  "gWeight": 1.2,
+  "userStoragePath": "/user/vendorjzsj/data/dpiMarketing/output/user",
+  "userProcessLogic": "0",
+  "storageLevel": "MEMORY_AND_DISK_SER",
+  "userBaseRecomBusiness": {
+    "businessTag": "A",
+    "rangeDay": "-10",
+    "telRecomUser": "501",
+    "msgRecomUser": "0-0",
+    "keyHourRate":10000
+  },
+  "businessList": [{
+    "businessName": "信用",
+    "weight": 1.0,
+    "businessTag": "A",
+    "threshold": 1
+  }
+  ],
+  "provinceList": [{
+    "provinceName": "北京",
+    "provinceNick": "BJ",
+    "intervalDay": 1,
+    "intervalHour": 1,
+    "period": 4,
+    "userRecomBusinessList": [{
+      "businessTag": "A",
+      "rangeDay": "-20",
+      "telRecomUser": "2000",
+      "msgRecomUser": "0-0",
+      "keyHourRate":10000
+    }
+    ],
+    "positionList": [{
+      "networkType": "4G",
+      "dpiPath": "/daas/bstl/dpiqixin/beijing_4G",
+      "newDpiPath":"/daas/bstl/dpiqixin/prov_id=811",
+      "urlPosition": 29,
+      "userAgentPosition": 28,
+      "userPhonePosition": 1
+    }, {
+      "networkType": "3G",
+      "dpiPath": "/daas/bstl/dpiqixin/beijing",
+      "newDpiPath":"/daas/bstl/dpiqixin/prov_id=811",
+      "urlPosition": 27,
+      "userAgentPosition": 26,
+      "userPhonePosition": 1
+    }
+    ]
+  }
+  ],
+  "baseValList": [{
+    "varName": "v1",
+    "weight": 1.1
+  }, {
+    "varName": "v2",
+    "weight": 1.3
+  }, {
+    "varName": "v3",
+    "weight": 1.2
+  }
+  ],
+  "telcomGainCustomer": {
+    "apiKey": "3591505898906120",
+    "secretkey": "1DE86E37CE9B0234DA173B738B276173",
+    "host": "10.0.174.85",
+    "port": "18080",
+    "gainUserSendUrl": "http://10.0.174.85:18080/restful/pm-label/info/receiveData/",
+    "pushUserSize": 1,
+    "apiRequestDelay": 10,
+    "pushBatchSize":2000,
+    "keyHourRate": 10000,
+    "intervalTime": 15
+  },
+  "accessDataType":"byte",
+  "numExecutors":750,
+  "repartitionSize":10,
+  "executorMemory":"4G",
+  "executorCores":1,
+  "storageFraction":0.6,
+  "memoryFraction":0.8,
+  "driverMemory":"4G",
+  "mainClass":"IFB.TelComDpiExtensionWorker",
+  "appJar":"TelecomDpi_Marketing-1.0.jar"
+}

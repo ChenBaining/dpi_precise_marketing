@@ -1,0 +1,71 @@
+{
+  "globalIntervalDay": 1,
+  "filterUrlSuffix": "css|js|gif|bmp|jpeg|tiff|psd|png|svg|pcx|wmf|emf|lic|tga|rle|doc|jpg",
+  "filterUserAgent": "WeChat",
+  "scoreStoragePath": "D:/data/score",
+  "rangeDay": 3,
+  "gWeight": 1.0,
+  "userStoragePath": "D:/data/data/user",
+  "userProcessLogic": "1",
+  "userBaseRecomBusiness": {
+    "businessTag": "A",
+    "rangeDay": "-5",
+    "telRecomUser": "5",
+    "msgRecomUser": "5-10"
+  },
+  "businessList": [
+    {
+      "businessName": "业务名称A",
+      "weight": 1.0,
+      "businessTag": "A",
+      "threshold": 1
+    }
+  ],
+  "provinceList": [
+    {
+      "provinceName": "北京",
+      "provinceNick": "BJ",
+      "intervalDay": 1,
+      "userRecomBusinessList": [
+        {
+          "businessTag": "A",
+          "rangeDay": "-5",
+          "telRecomUser": "5",
+          "msgRecomUser": "5-10"
+        }
+      ],
+      "positionList": [
+        {
+          "networkType": "3G",
+          "dpiPath": "D:/data/data/beijing",
+          "urlPosition": 27,
+          "userAgentPosition": 26,
+          "userPhonePosition": 1
+        }
+      ]
+    }
+  ],
+  "baseValList": [
+    {
+      "varName": "v1",
+      "weight": 1.0
+    },
+    {
+      "varName": "v2",
+      "weight": 1.0
+    },
+    {
+      "varName": "v3",
+      "weight": 1.0
+    }
+  ],
+  "telcomGainCustomer": {
+    "apiKey": "CD1BC28CAF762A86D75BBC072D8B4F08",
+    "secretkey": "3DE2C39E5B06F33336A5DC21E1A3370F",
+    "host": "42.123.106.17",
+    "port": "18080",
+    "pushUserSize":20,
+    "intervalTime": 10000
+  },
+  "accessDataType": "byte"
+}
